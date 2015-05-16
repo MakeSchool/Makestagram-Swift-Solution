@@ -1,0 +1,12 @@
+framework module Bolts {
+  umbrella header "Bolts.h"
+  
+  export *
+  module * { export * }
+  
+  
+  explicit module BFAppLinkResolver {
+    header "BFAppLinkResolver.h"
+    link "BFAppLinkResolver"
+    export *
+}}
