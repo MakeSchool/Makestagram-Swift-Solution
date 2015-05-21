@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Friend Search View Controller-->
         <scene sceneID="duf-Fg-pMk">
             <objects>
-                <viewController id="CIu-mW-9E4" sceneMemberID="viewController">
+                <viewController id="CIu-mW-9E4" customClass="FriendSearchViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w0i-l0-Z9j"/>
                         <viewControllerLayoutGuide type="bottom" id="P72-U2-MCI"/>
@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="840" y="634"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="D78-it-JNo">
             <objects>
-                <viewController id="FCm-8m-WnB" sceneMemberID="viewController">
+                <viewController id="FCm-8m-WnB" customClass="PhotoViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SdP-66-nvR"/>
                         <viewControllerLayoutGuide type="bottom" id="jmq-Uy-q8R"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="-88" y="917"/>
         </scene>
-        <!--View Controller-->
+        <!--Timeline View Controller-->
         <scene sceneID="2u5-In-FtJ">
             <objects>
-                <viewController id="ZOG-s5-zI9" sceneMemberID="viewController">
+                <viewController id="ZOG-s5-zI9" customClass="TimelineViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gai-vw-BcO"/>
                         <viewControllerLayoutGuide type="bottom" id="4P3-gr-kt1"/>
