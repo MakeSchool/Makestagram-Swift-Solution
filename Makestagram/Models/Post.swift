@@ -15,6 +15,7 @@ class Post : PFObject, PFSubclassing {
   @NSManaged var user: PFUser?
 
   var image: UIImage?
+  var photoUploadTask: UIBackgroundTaskIdentifier?
   
   //MARK: PFSubclassing Protocol
   
@@ -39,10 +40,22 @@ class Post : PFObject, PFSubclassing {
   func uploadPost() {
     let imageData = UIImageJPEGRepresentation(image, 0.8)
     let imageFile = PFFile(data: imageData)
-    imageFile.save()
     
+    // 1
+    photoUploadTask = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler { () -> Void in
+      UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
+    }
+    
+    // 2
+    imageFile.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+      // 3
+      UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
+    }
+    
+    // any uploaded post should be associated with the current user
+    user = PFUser.currentUser()
     self.imageFile = imageFile
-    save()
+    saveInBackgroundWithBlock(nil)
   }
   
 }
