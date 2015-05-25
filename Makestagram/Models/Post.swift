@@ -14,6 +14,7 @@ class Post : PFObject, PFSubclassing {
   @NSManaged var imageFile: PFFile?
   @NSManaged var user: PFUser?
 
+  var image: UIImage?
   
   //MARK: PFSubclassing Protocol
   
@@ -31,6 +32,17 @@ class Post : PFObject, PFSubclassing {
       // inform Parse about this subclass
       self.registerSubclass()
     }
+  }
+  
+  //MARK: Parse logic
+  
+  func uploadPost() {
+    let imageData = UIImageJPEGRepresentation(image, 0.8)
+    let imageFile = PFFile(data: imageData)
+    imageFile.save()
+    
+    self.imageFile = imageFile
+    save()
   }
   
 }
