@@ -28,8 +28,8 @@ class TimelineViewController: UIViewController {
       let imageFile = PFFile(data: imageData)
       imageFile.save()
       
-      let post = PFObject(className: "Post")
-      post["imageFile"] = imageFile
+      let post = Post()
+      post.imageFile = imageFile
       post.save()
     })
   }
