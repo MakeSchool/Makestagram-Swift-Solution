@@ -23,29 +23,17 @@ class TimelineViewController: UIViewController {
   
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
-    
-    let followingQuery = PFQuery(className: "Follow")
-    followingQuery.whereKey("fromUser", equalTo:PFUser.currentUser()!)
-    
-    let postsFromFollowedUsers = Post.query()
-    postsFromFollowedUsers!.whereKey("user", matchesKey: "toUser", inQuery: followingQuery)
-    
-    let postsFromThisUser = Post.query()
-    postsFromThisUser!.whereKey("user", equalTo: PFUser.currentUser()!)
-    
-    let query = PFQuery.orQueryWithSubqueries([postsFromFollowedUsers!, postsFromThisUser!])
-    query.includeKey("user")
-    query.orderByDescending("createdAt")
-    
-    query.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
-      self.posts = result as? [Post] ?? []
+  
+    ParseHelper.timelineRequestforCurrentUser {
+      (result: [AnyObject]?, error: NSError?) -> Void in
+        self.posts = result as? [Post] ?? []
       
-      for post in self.posts {
-        let data = post.imageFile?.getData()
-        post.image = UIImage(data: data!, scale:1.0)
-      }
-      
-      self.tableView.reloadData()
+        for post in self.posts {
+          let data = post.imageFile?.getData()
+          post.image = UIImage(data: data!, scale:1.0)
+        }
+        
+        self.tableView.reloadData()
     }
   }
   
