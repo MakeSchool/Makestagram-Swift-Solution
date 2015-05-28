@@ -8,13 +8,14 @@
 
 import Foundation
 import Parse
+import Bond
 
 class Post : PFObject, PFSubclassing {
   
   @NSManaged var imageFile: PFFile?
   @NSManaged var user: PFUser?
 
-  var image: UIImage?
+  var image: Dynamic<UIImage?> = Dynamic(nil)
   var photoUploadTask: UIBackgroundTaskIdentifier?
   
   //MARK: PFSubclassing Protocol
@@ -38,17 +39,14 @@ class Post : PFObject, PFSubclassing {
   //MARK: Parse logic
   
   func uploadPost() {
-    let imageData = UIImageJPEGRepresentation(image, 0.8)
+    let imageData = UIImageJPEGRepresentation(image.value, 0.8)
     let imageFile = PFFile(data: imageData)
     
-    // 1
     photoUploadTask = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler { () -> Void in
       UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
     }
     
-    // 2
     imageFile.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-      // 3
       UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
     }
     
@@ -56,6 +54,18 @@ class Post : PFObject, PFSubclassing {
     user = PFUser.currentUser()
     self.imageFile = imageFile
     saveInBackgroundWithBlock(nil)
+  }
+  
+  func downloadImage() {
+    // if image is not downloaded yet, get it
+    if (image.value == nil) {
+      imageFile?.getDataInBackgroundWithBlock { (data: NSData?, error: NSError?) -> Void in
+        if let data = data {
+          let image = UIImage(data: data, scale:1.0)!
+          self.image.value = image
+        }
+      }
+    }
   }
   
 }
