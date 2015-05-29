@@ -69,7 +69,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4FK-Jm-bHD" id="qhc-Zo-R6T">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sla-7g-xe8">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sla-7g-xe8">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="344"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="344" id="nGi-YN-VIo"/>
@@ -92,8 +92,11 @@
                                                             <exclude reference="zgE-sm-Eek"/>
                                                         </mask>
                                                     </variation>
+                                                    <connections>
+                                                        <action selector="likeButtonTapped:" destination="4FK-Jm-bHD" eventType="touchUpInside" id="6dx-WI-9zm"/>
+                                                    </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9q-3Y-T8u">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9q-3Y-T8u">
                                                     <rect key="frame" x="8" y="407" width="44" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="44" id="Jpo-9r-XHw"/>
@@ -102,6 +105,9 @@
                                                     <state key="normal" image="More">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="moreButtonTapped:" destination="4FK-Jm-bHD" eventType="touchUpInside" id="GXv-NS-wR9"/>
+                                                    </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="h9W-Hf-rVK">
                                                     <rect key="frame" x="20" y="367" width="20" height="20"/>
@@ -136,6 +142,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="likeButton" destination="nvu-N2-u7J" id="RpN-pk-9jG"/>
+                                            <outlet property="likesIconImageView" destination="h9W-Hf-rVK" id="Fwx-rI-QKL"/>
+                                            <outlet property="likesLabel" destination="wRb-dW-Cjo" id="lRJ-7Z-x8j"/>
+                                            <outlet property="moreButton" destination="W9q-3Y-T8u" id="cuj-eA-OhY"/>
                                             <outlet property="postImageView" destination="Sla-7g-xe8" id="huQ-d0-i7f"/>
                                         </connections>
                                     </tableViewCell>
