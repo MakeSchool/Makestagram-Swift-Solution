@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F2E5006A-A887-4749-A985-07C4C8C1C8BE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Makestagram</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8A55711A911025580008E07967075F6FCE6BF773</key>
 		<string>github.com:MakeSchool/Makestagram-Swift-Solution.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Makestagram.xcodeproj</string>
+	<string>Makestagram.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8A55711A911025580008E07967075F6FCE6BF773</key>
