@@ -86,3 +86,11 @@ class ParseHelper {
     query.findObjectsInBackgroundWithBlock(completionBlock)
   }
 }
+
+extension PFUser : Equatable {
+  
+}
+
+public func ==(lhs: PFUser, rhs: PFUser) -> Bool {
+  return lhs.objectId == rhs.objectId
+}

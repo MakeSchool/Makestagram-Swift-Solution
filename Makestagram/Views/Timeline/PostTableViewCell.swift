@@ -18,14 +18,40 @@ class PostTableViewCell: UITableViewCell {
   @IBOutlet weak var likeButton: UIButton!
   @IBOutlet weak var moreButton: UIButton!
   
+  var likeBond: Bond<[PFUser]?>!
+  
   var post:Post? {
     didSet {
       if let post = post {
         // bind the image of the post to the 'postImage' view
         post.image ->> postImageView
+        
+        // bind the likeBond that we defined earlier, to update like label and button when likes change
+        post.likes ->> likeBond
       }
     }
   }
+  
+  //MARK: Initialization
+  
+  required init(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    
+    likeBond = Bond<[PFUser]?>() { [unowned self] likeList in
+      if let likeList = likeList {
+        self.likesLabel.text = self.stringFromUserlist(likeList)
+        self.likeButton.selected = contains(likeList, PFUser.currentUser()!)
+        self.likesIconImageView.hidden = (likeList.count == 0)
+      } else {
+        // if there is no list of users that like this post, reset everything
+        self.likesLabel.text = ""
+        self.likeButton.selected = false
+        self.likesIconImageView.hidden = true
+      }
+    }
+  }
+  
+  // MARK: Button Callbacks
   
   @IBAction func moreButtonTapped(sender: AnyObject) {
     
@@ -33,6 +59,16 @@ class PostTableViewCell: UITableViewCell {
   
   @IBAction func likeButtonTapped(sender: AnyObject) {
     post?.toggleLikePost(PFUser.currentUser()!)
+  }
+  
+  //MARK: Helper functions
+  
+  // Generates a comma seperated list of usernames from an array (e.g. "User1, User2")
+  func stringFromUserlist(userList: [PFUser]) -> String {
+    let usernameList = userList.map { user in user.username! }
+    let commaSeperatedUserList = ", ".join(usernameList)
+    
+    return commaSeperatedUserList
   }
   
 }
