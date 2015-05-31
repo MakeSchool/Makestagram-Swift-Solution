@@ -152,6 +152,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="ZOG-s5-zI9" id="F1I-1e-1Z3"/>
+                                    <outlet property="delegate" destination="ZOG-s5-zI9" id="1IF-my-U3V"/>
                                 </connections>
                             </tableView>
                         </subviews>
