@@ -55,17 +55,15 @@ public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S
       self.content = content! as [T]
       self.refreshControl.endRefreshing()
       
-      delay(0.5) {
-        UIView.transitionWithView(self.target!.tableView,
-          duration: 0.35,
-          options: .TransitionCrossDissolve,
-          animations:
-          { () -> Void in
-            self.target!.tableView.reloadData()
-            self.target!.tableView.contentOffset = CGPoint(x: 0, y: 0)
-          },
-          completion: nil);
-      }
+      UIView.transitionWithView(self.target!.tableView,
+        duration: 0.35,
+        options: .TransitionCrossDissolve,
+        animations:
+        { () -> Void in
+          self.target!.tableView.reloadData()
+          self.target!.tableView.contentOffset = CGPoint(x: 0, y: 0)
+        },
+        completion: nil);
     }
   }
   
@@ -90,6 +88,18 @@ public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S
       
       self.content = self.content + newPosts!
       self.target!.tableView.reloadData()
+    }
+  }
+  
+  // MARK: Load initial
+  
+  public func loadInitialIfRequired() {
+    // if no posts are currently loaded, load the default range
+    if (content == []) {
+      target!.loadInRange(target!.defaultRange) { posts in
+        self.content = posts ?? []
+        self.target!.tableView.reloadData()
+      }
     }
   }
   
