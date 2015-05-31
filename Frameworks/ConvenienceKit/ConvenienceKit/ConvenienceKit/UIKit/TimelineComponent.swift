@@ -24,7 +24,7 @@ protocol Refreshable {
 // Adds pull-to-refresh and lazy loading to a table view
 
 public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S.ContentType == T> : Refreshable {
-  
+    
   weak var target: S?
   var refreshControl: UIRefreshControl
   
@@ -93,8 +93,8 @@ public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S
     }
   }
   
-  public func calledCellForRowAtIndexPath(indexPath: NSIndexPath) {
-    if (indexPath.section == (currentRange.endIndex - 1) && !loadedAllContent) {
+  public func targetWillDisplayEntry(entryIndex: Int) {
+    if (entryIndex == (currentRange.endIndex - 1) && !loadedAllContent) {
       loadMore()
     }
   }
