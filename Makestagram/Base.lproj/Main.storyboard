@@ -23,12 +23,15 @@
                                     <constraint firstAttribute="height" constant="44" id="JlC-yM-3fa"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="CIu-mW-9E4" id="5aP-3u-uqx"/>
+                                </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WM7-uu-FRQ">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kzY-gn-Xbg">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" id="kzY-gn-Xbg" customClass="FriendSearchTableViewCell" customModule="Makestagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kzY-gn-Xbg" id="iHK-02-a1A">
@@ -54,6 +57,9 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected" image="Check"/>
+                                                    <connections>
+                                                        <action selector="followButtonTapped:" destination="kzY-gn-Xbg" eventType="touchUpInside" id="BKP-du-6nb"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -64,8 +70,15 @@
                                                 <constraint firstAttribute="centerY" secondItem="1rg-u4-TzP" secondAttribute="centerY" id="sDe-lN-BPD"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="followButton" destination="1rg-u4-TzP" id="Kmp-JN-ych"/>
+                                            <outlet property="usernameLabel" destination="uwG-yR-tCD" id="RTx-1v-0HW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="CIu-mW-9E4" id="gLK-d1-LJr"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -82,6 +95,10 @@
                     <tabBarItem key="tabBarItem" title="" image="People" id="fNW-So-eBQ">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="searchBar" destination="PPB-h7-0Z6" id="jSL-kb-w6k"/>
+                        <outlet property="tableView" destination="WM7-uu-FRQ" id="UAB-EL-8Eb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Md6-eQ-ZGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
