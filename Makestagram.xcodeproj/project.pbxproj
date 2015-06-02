@@ -20,7 +20,6 @@
 		62551B721B06BF6D000913E4 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B691B06BF6D000913E4 /* ParseFacebookUtils.framework */; };
 		62551B731B06BF6D000913E4 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B6A1B06BF6D000913E4 /* ParseFacebookUtilsV4.framework */; };
 		62551B741B06BF6D000913E4 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B6B1B06BF6D000913E4 /* ParseUI.framework */; };
-		62551B931B06C072000913E4 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B7E1B06BFA2000913E4 /* Bond.framework */; };
 		62551B941B06C072000913E4 /* ConvenienceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B8E1B06BFD7000913E4 /* ConvenienceKit.framework */; };
 		62551B961B06C2F5000913E4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B951B06C2F5000913E4 /* Social.framework */; };
 		62551B981B06C2FD000913E4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B971B06C2FD000913E4 /* Accounts.framework */; };
@@ -40,6 +39,10 @@
 		627718981B0A581700AF5C6E /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6277188C1B0A581600AF5C6E /* FilterViewController.xib */; };
 		6277189F1B0A58E800AF5C6E /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277189D1B0A58E800AF5C6E /* ErrorHandling.swift */; };
 		627718A01B0A58E800AF5C6E /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277189E1B0A58E800AF5C6E /* ParseLoginHelper.swift */; };
+		62A07CF71B1E03AA001F6916 /* FriendSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A07CF61B1E03AA001F6916 /* FriendSearchTableViewCell.swift */; };
+		62A07CFE1B1E2465001F6916 /* ConvenienceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B8E1B06BFD7000913E4 /* ConvenienceKit.framework */; };
+		62A07CFF1B1E2465001F6916 /* ConvenienceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B8E1B06BFD7000913E4 /* ConvenienceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		62A07D0B1B1E2605001F6916 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B821B06BFA2000913E4 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8C1E51B06BD6500DC3EA7 /* AppDelegate.swift */; };
 		62C8C1EB1B06BD6500DC3EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C8C1E91B06BD6500DC3EA7 /* Main.storyboard */; };
 		62C8C1ED1B06BD6500DC3EA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C8C1EC1B06BD6500DC3EA7 /* Images.xcassets */; };
@@ -107,6 +110,20 @@
 			remoteGlobalIDString = 62EAE65C1AD844C90069D0EC;
 			remoteInfo = ConvenienceKitApp;
 		};
+		62A07D001B1E2465001F6916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62551B871B06BFD7000913E4 /* ConvenienceKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 62EAE5DB1AD82A000069D0EC;
+			remoteInfo = ConvenienceKit;
+		};
+		62A07D0C1B1E2605001F6916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62551B751B06BFA2000913E4 /* Bond.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DCA979681A83C3A100DD4A30;
+			remoteInfo = BondOSX;
+		};
 		62C8C1F61B06BD6500DC3EA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62C8C1D81B06BD6500DC3EA7 /* Project object */;
@@ -115,6 +132,21 @@
 			remoteInfo = Makestagram;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62A07CFD1B1E2445001F6916 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				62A07D0B1B1E2605001F6916 /* Bond.framework in Embed Frameworks */,
+				62A07CFF1B1E2465001F6916 /* ConvenienceKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		621BBB781B0E5D1F00E1F1DB /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +182,7 @@
 		6277188C1B0A581600AF5C6E /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
 		6277189D1B0A58E800AF5C6E /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		6277189E1B0A58E800AF5C6E /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
+		62A07CF61B1E03AA001F6916 /* FriendSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchTableViewCell.swift; sourceTree = "<group>"; };
 		62C8C1E01B06BD6500DC3EA7 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C8C1E41B06BD6500DC3EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C8C1E51B06BD6500DC3EA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,7 +209,6 @@
 				62551B9A1B06C31F000913E4 /* CoreLocation.framework in Frameworks */,
 				62551B981B06C2FD000913E4 /* Accounts.framework in Frameworks */,
 				62551B961B06C2F5000913E4 /* Social.framework in Frameworks */,
-				62551B931B06C072000913E4 /* Bond.framework in Frameworks */,
 				62551B941B06C072000913E4 /* ConvenienceKit.framework in Frameworks */,
 				62551B741B06BF6D000913E4 /* ParseUI.framework in Frameworks */,
 				62551B721B06BF6D000913E4 /* ParseFacebookUtils.framework in Frameworks */,
@@ -185,6 +217,7 @@
 				62551B711B06BF6D000913E4 /* ParseCrashReporting.framework in Frameworks */,
 				62551B6C1B06BF6D000913E4 /* Bolts.framework in Frameworks */,
 				62551B6D1B06BF6D000913E4 /* FBSDKCoreKit.framework in Frameworks */,
+				62A07CFE1B1E2465001F6916 /* ConvenienceKit.framework in Frameworks */,
 				62551B6E1B06BF6D000913E4 /* FBSDKLoginKit.framework in Frameworks */,
 				62551B701B06BF6D000913E4 /* Parse.framework in Frameworks */,
 			);
@@ -300,6 +333,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		62A07CED1B1E0388001F6916 /* FriendSearch */ = {
+			isa = PBXGroup;
+			children = (
+				62A07CF61B1E03AA001F6916 /* FriendSearchTableViewCell.swift */,
+			);
+			path = FriendSearch;
+			sourceTree = "<group>";
+		};
 		62C8C1D71B06BD6500DC3EA7 = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +413,7 @@
 		62FE3C151B152263009CC352 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				62A07CED1B1E0388001F6916 /* FriendSearch */,
 				62FE3C161B152263009CC352 /* Timeline */,
 			);
 			path = Views;
@@ -395,10 +437,13 @@
 				62C8C1DC1B06BD6500DC3EA7 /* Sources */,
 				62C8C1DD1B06BD6500DC3EA7 /* Frameworks */,
 				62C8C1DE1B06BD6500DC3EA7 /* Resources */,
+				62A07CFD1B1E2445001F6916 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				62A07D011B1E2465001F6916 /* PBXTargetDependency */,
+				62A07D0D1B1E2605001F6916 /* PBXTargetDependency */,
 			);
 			name = Makestagram;
 			productName = Makestagram;
@@ -569,6 +614,7 @@
 				621BBB791B0E5D1F00E1F1DB /* TimelineViewController.swift in Sources */,
 				621BBB811B0E7FA000E1F1DB /* PhotoTakingHelper.swift in Sources */,
 				621BBB7B1B0E5D3A00E1F1DB /* PhotoViewController.swift in Sources */,
+				62A07CF71B1E03AA001F6916 /* FriendSearchTableViewCell.swift in Sources */,
 				62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */,
 				627718971B0A581700AF5C6E /* FilterViewController.swift in Sources */,
 				62FE3C2D1B1660A3009CC352 /* ParseHelper.swift in Sources */,
@@ -587,6 +633,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		62A07D011B1E2465001F6916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ConvenienceKit;
+			targetProxy = 62A07D001B1E2465001F6916 /* PBXContainerItemProxy */;
+		};
+		62A07D0D1B1E2605001F6916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BondOSX;
+			targetProxy = 62A07D0C1B1E2605001F6916 /* PBXContainerItemProxy */;
+		};
 		62C8C1F71B06BD6500DC3EA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 62C8C1DF1B06BD6500DC3EA7 /* Makestagram */;
