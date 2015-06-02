@@ -12,5 +12,7 @@ import Foundation
 public func removeObject<T : Equatable>(object: T, inout fromArray array: [T])
 {
   var index = find(array, object)
-  array.removeAtIndex(index!)
+  if let index = index {
+    array.removeAtIndex(index)
+  }
 }
