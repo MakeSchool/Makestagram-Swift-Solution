@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DCA979681A83C3A100DD4A30"
-               BuildableName = "Bond.framework"
-               BlueprintName = "BondOSX"
-               ReferencedContainer = "container:Bond.xcodeproj">
+               BlueprintIdentifier = "62C8C1DF1B06BD6500DC3EA7"
+               BuildableName = "Makestagram.app"
+               BlueprintName = "Makestagram"
+               ReferencedContainer = "container:Makestagram.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DCA979721A83C3A200DD4A30"
-               BuildableName = "BondOSXTests.xctest"
-               BlueprintName = "BondOSXTests"
-               ReferencedContainer = "container:Bond.xcodeproj">
+               BlueprintIdentifier = "62C8C1F41B06BD6500DC3EA7"
+               BuildableName = "MakestagramTests.xctest"
+               BlueprintName = "MakestagramTests"
+               ReferencedContainer = "container:Makestagram.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DCA979721A83C3A200DD4A30"
-               BuildableName = "BondOSXTests.xctest"
-               BlueprintName = "BondOSXTests"
-               ReferencedContainer = "container:Bond.xcodeproj">
+               BlueprintIdentifier = "62C8C1F41B06BD6500DC3EA7"
+               BuildableName = "MakestagramTests.xctest"
+               BlueprintName = "MakestagramTests"
+               ReferencedContainer = "container:Makestagram.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCA979681A83C3A100DD4A30"
-            BuildableName = "Bond.framework"
-            BlueprintName = "BondOSX"
-            ReferencedContainer = "container:Bond.xcodeproj">
+            BlueprintIdentifier = "62C8C1DF1B06BD6500DC3EA7"
+            BuildableName = "Makestagram.app"
+            BlueprintName = "Makestagram"
+            ReferencedContainer = "container:Makestagram.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,15 +72,16 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCA979681A83C3A100DD4A30"
-            BuildableName = "Bond.framework"
-            BlueprintName = "BondOSX"
-            ReferencedContainer = "container:Bond.xcodeproj">
+            BlueprintIdentifier = "62C8C1DF1B06BD6500DC3EA7"
+            BuildableName = "Makestagram.app"
+            BlueprintName = "Makestagram"
+            ReferencedContainer = "container:Makestagram.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +91,16 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCA979681A83C3A100DD4A30"
-            BuildableName = "Bond.framework"
-            BlueprintName = "BondOSX"
-            ReferencedContainer = "container:Bond.xcodeproj">
+            BlueprintIdentifier = "62C8C1DF1B06BD6500DC3EA7"
+            BuildableName = "Makestagram.app"
+            BlueprintName = "Makestagram"
+            ReferencedContainer = "container:Makestagram.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
