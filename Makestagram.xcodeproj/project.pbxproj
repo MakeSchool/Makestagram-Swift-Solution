@@ -15,7 +15,6 @@
 		62551B711B06BF6D000913E4 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B681B06BF6D000913E4 /* ParseCrashReporting.framework */; };
 		62551B731B06BF6D000913E4 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B6A1B06BF6D000913E4 /* ParseFacebookUtilsV4.framework */; };
 		62551B741B06BF6D000913E4 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B6B1B06BF6D000913E4 /* ParseUI.framework */; };
-		62551B931B06C072000913E4 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B7E1B06BFA2000913E4 /* Bond.framework */; };
 		62551B941B06C072000913E4 /* ConvenienceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B8E1B06BFD7000913E4 /* ConvenienceKit.framework */; };
 		62551B961B06C2F5000913E4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B951B06C2F5000913E4 /* Social.framework */; };
 		62551B981B06C2FD000913E4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B971B06C2FD000913E4 /* Accounts.framework */; };
@@ -35,11 +34,10 @@
 		627718981B0A581700AF5C6E /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6277188C1B0A581600AF5C6E /* FilterViewController.xib */; };
 		6277189F1B0A58E800AF5C6E /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277189D1B0A58E800AF5C6E /* ErrorHandling.swift */; };
 		627718A01B0A58E800AF5C6E /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277189E1B0A58E800AF5C6E /* ParseLoginHelper.swift */; };
-		62A07D151B1E56C1001F6916 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B821B06BFA2000913E4 /* Bond.framework */; };
-		62A07D161B1E56C1001F6916 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B821B06BFA2000913E4 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		62A07D1D1B1E56C8001F6916 /* ConvenienceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B8E1B06BFD7000913E4 /* ConvenienceKit.framework */; };
 		62A07D1E1B1E56C8001F6916 /* ConvenienceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B8E1B06BFD7000913E4 /* ConvenienceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62A07D661B1F79F2001F6916 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A07D651B1F79F2001F6916 /* libstdc++.6.dylib */; };
+		62A07D6E1B1F7FB9001F6916 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B7E1B06BFA2000913E4 /* Bond.framework */; };
+		62A07D6F1B1F7FB9001F6916 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B7E1B06BFA2000913E4 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8C1E51B06BD6500DC3EA7 /* AppDelegate.swift */; };
 		62C8C1E81B06BD6500DC3EA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8C1E71B06BD6500DC3EA7 /* ViewController.swift */; };
 		62C8C1EB1B06BD6500DC3EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C8C1E91B06BD6500DC3EA7 /* Main.storyboard */; };
@@ -105,19 +103,19 @@
 			remoteGlobalIDString = 62EAE65C1AD844C90069D0EC;
 			remoteInfo = ConvenienceKitApp;
 		};
-		62A07D171B1E56C1001F6916 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62551B751B06BFA2000913E4 /* Bond.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DCA979681A83C3A100DD4A30;
-			remoteInfo = BondOSX;
-		};
 		62A07D1F1B1E56C8001F6916 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62551B871B06BFD7000913E4 /* ConvenienceKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 62EAE5DB1AD82A000069D0EC;
 			remoteInfo = ConvenienceKit;
+		};
+		62A07D701B1F7FB9001F6916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62551B751B06BFA2000913E4 /* Bond.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 69491BAD1A7C217100A13B6B;
+			remoteInfo = Bond;
 		};
 		62C8C1F61B06BD6500DC3EA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -135,7 +133,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				62A07D161B1E56C1001F6916 /* Bond.framework in Embed Frameworks */,
+				62A07D6F1B1F7FB9001F6916 /* Bond.framework in Embed Frameworks */,
 				62A07D1E1B1E56C8001F6916 /* ConvenienceKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -196,20 +194,18 @@
 				62551BA21B06C373000913E4 /* libsqlite3.dylib in Frameworks */,
 				62551BA01B06C35B000913E4 /* AudioToolbox.framework in Frameworks */,
 				62551B9E1B06C354000913E4 /* MobileCoreServices.framework in Frameworks */,
-				62A07D151B1E56C1001F6916 /* Bond.framework in Frameworks */,
 				62551B9C1B06C327000913E4 /* SystemConfiguration.framework in Frameworks */,
 				62551B9A1B06C31F000913E4 /* CoreLocation.framework in Frameworks */,
 				62551B981B06C2FD000913E4 /* Accounts.framework in Frameworks */,
 				62551B961B06C2F5000913E4 /* Social.framework in Frameworks */,
-				62551B931B06C072000913E4 /* Bond.framework in Frameworks */,
 				62551B941B06C072000913E4 /* ConvenienceKit.framework in Frameworks */,
 				62551B741B06BF6D000913E4 /* ParseUI.framework in Frameworks */,
+				62A07D6E1B1F7FB9001F6916 /* Bond.framework in Frameworks */,
 				62551B6F1B06BF6D000913E4 /* FBSDKShareKit.framework in Frameworks */,
 				62551B731B06BF6D000913E4 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				62551B711B06BF6D000913E4 /* ParseCrashReporting.framework in Frameworks */,
 				62551B6C1B06BF6D000913E4 /* Bolts.framework in Frameworks */,
 				62551B6D1B06BF6D000913E4 /* FBSDKCoreKit.framework in Frameworks */,
-				62A07D1D1B1E56C8001F6916 /* ConvenienceKit.framework in Frameworks */,
 				62551B6E1B06BF6D000913E4 /* FBSDKLoginKit.framework in Frameworks */,
 				62551B701B06BF6D000913E4 /* Parse.framework in Frameworks */,
 			);
@@ -389,8 +385,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				62A07D181B1E56C1001F6916 /* PBXTargetDependency */,
 				62A07D201B1E56C8001F6916 /* PBXTargetDependency */,
+				62A07D711B1F7FB9001F6916 /* PBXTargetDependency */,
 			);
 			name = Makestagram;
 			productName = Makestagram;
@@ -573,15 +569,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		62A07D181B1E56C1001F6916 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BondOSX;
-			targetProxy = 62A07D171B1E56C1001F6916 /* PBXContainerItemProxy */;
-		};
 		62A07D201B1E56C8001F6916 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ConvenienceKit;
 			targetProxy = 62A07D1F1B1E56C8001F6916 /* PBXContainerItemProxy */;
+		};
+		62A07D711B1F7FB9001F6916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bond;
+			targetProxy = 62A07D701B1F7FB9001F6916 /* PBXContainerItemProxy */;
 		};
 		62C8C1F71B06BD6500DC3EA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
