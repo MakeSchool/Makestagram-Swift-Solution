@@ -697,12 +697,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Checkouts/Nimble/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Checkouts/Nimble/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Checkouts/Quick/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Checkouts/Quick/Carthage/Build/Mac",
 					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Frameworks",
 				);
 				INFOPLIST_FILE = Makestagram/Info.plist;
@@ -721,12 +715,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Checkouts/Nimble/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Checkouts/Nimble/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Checkouts/Quick/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Carthage/Checkouts/Quick/Carthage/Build/Mac",
 					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Frameworks",
 				);
 				INFOPLIST_FILE = Makestagram/Info.plist;
