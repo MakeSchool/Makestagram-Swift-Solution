@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		625441991AE179470029A633 /* Array+RemoveObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625441981AE179470029A633 /* Array+RemoveObject.swift */; };
+		62745A7A1B21081A00B9D9F0 /* NSCacheSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62745A791B21081A00B9D9F0 /* NSCacheSwift.swift */; };
 		62BD2B311ADC43100033B65F /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2B301ADC43100033B65F /* Delay.swift */; };
 		62BD2B331ADC4F8F0033B65F /* TimelineComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2B321ADC4F8F0033B65F /* TimelineComponent.swift */; };
 		62EAE5E21AD82A000069D0EC /* ConvenienceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EAE5E11AD82A000069D0EC /* ConvenienceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		625441981AE179470029A633 /* Array+RemoveObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+RemoveObject.swift"; sourceTree = "<group>"; };
+		62745A791B21081A00B9D9F0 /* NSCacheSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCacheSwift.swift; sourceTree = "<group>"; };
 		62BD2B301ADC43100033B65F /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		62BD2B321ADC4F8F0033B65F /* TimelineComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineComponent.swift; sourceTree = "<group>"; };
 		62EAE5DC1AD82A000069D0EC /* ConvenienceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConvenienceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 		62BD2B2F1ADC43060033B65F /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				62745A791B21081A00B9D9F0 /* NSCacheSwift.swift */,
 				62BD2B301ADC43100033B65F /* Delay.swift */,
 				625441981AE179470029A633 /* Array+RemoveObject.swift */,
 			);
@@ -369,6 +372,7 @@
 				62BD2B331ADC4F8F0033B65F /* TimelineComponent.swift in Sources */,
 				625441991AE179470029A633 /* Array+RemoveObject.swift in Sources */,
 				62BD2B311ADC43100033B65F /* Delay.swift in Sources */,
+				62745A7A1B21081A00B9D9F0 /* NSCacheSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
