@@ -22,6 +22,15 @@ class PostTableViewCell: UITableViewCell {
   
   var post:Post? {
     didSet {
+      // free memory of image stored with post that is no longer displayed
+      if let oldValue = oldValue where oldValue != post {
+        likeBond.unbindAll()
+        postImageView.designatedBond.unbindAll()
+        if (oldValue.image.bonds.count == 0) {
+          oldValue.image.value = nil
+        }
+      }
+      
       if let post = post {
         // bind the image of the post to the 'postImage' view
         post.image ->> postImageView
