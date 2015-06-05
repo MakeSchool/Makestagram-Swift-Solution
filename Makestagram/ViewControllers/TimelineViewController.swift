@@ -38,6 +38,10 @@ class TimelineViewController: UIViewController, TimelineComponentTarget {
   func loadInRange(range: Range<Int>, completionBlock: ([Post]?) -> Void) {
     ParseHelper.timelineRequestforCurrentUser(range) {
       (result: [AnyObject]?, error: NSError?) -> Void in
+        if let error = error {
+          ErrorHandling.defaultErrorHandler(error)
+        }
+      
         let posts = result as? [Post] ?? []
         completionBlock(posts)
     }
