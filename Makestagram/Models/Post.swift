@@ -52,13 +52,17 @@ class Post : PFObject, PFSubclassing {
     }
     
     imageFile.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+      if let error = error {
+        ErrorHandling.defaultErrorHandler(error)
+      }
+      
       UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
     }
     
     // any uploaded post should be associated with the current user
     user = PFUser.currentUser()
     self.imageFile = imageFile
-    saveInBackgroundWithBlock(nil)
+    saveInBackgroundWithBlock(ErrorHandling.errorHandlingCallback)
   }
   
   func downloadImage() {
@@ -68,6 +72,10 @@ class Post : PFObject, PFSubclassing {
     if (image.value == nil) {
       
       imageFile?.getDataInBackgroundWithBlock { (data: NSData?, error: NSError?) -> Void in
+        if let error = error {
+          ErrorHandling.defaultErrorHandler(error)
+        }
+        
         if let data = data {
           let image = UIImage(data: data, scale:1.0)!
           self.image.value = image
@@ -83,6 +91,9 @@ class Post : PFObject, PFSubclassing {
     }
     
     ParseHelper.likesForPost(self, completionBlock: { (var likes: [AnyObject]?, error: NSError?) -> Void in
+      if let error = error {
+        ErrorHandling.defaultErrorHandler(error)
+      }
       // filter likes that are from users that no longer exist
       likes = likes?.filter { like in like[ParseHelper.ParseLikeFromUser] != nil }
 
