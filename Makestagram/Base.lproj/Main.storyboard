@@ -137,7 +137,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="470" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dTh-mC-boK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="470" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dTh-mC-boK">
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -154,7 +154,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvu-N2-u7J">
-                                                    <rect key="frame" x="544" y="401" width="44" height="44"/>
+                                                    <rect key="frame" x="544" y="402" width="44" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="44" id="UrK-20-Jnt"/>
                                                         <constraint firstAttribute="height" constant="44" id="taz-fE-RVS"/>
@@ -175,7 +175,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9q-3Y-T8u">
-                                                    <rect key="frame" x="8" y="407" width="44" height="44"/>
+                                                    <rect key="frame" x="8" y="408" width="44" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="44" id="Jpo-9r-XHw"/>
                                                         <constraint firstAttribute="height" constant="44" id="QIM-0h-nc4"/>
@@ -188,14 +188,14 @@
                                                     </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="h9W-Hf-rVK">
-                                                    <rect key="frame" x="20" y="367" width="20" height="20"/>
+                                                    <rect key="frame" x="20" y="368" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="Gd3-LK-WH0"/>
                                                         <constraint firstAttribute="height" constant="20" id="YEt-uq-5og"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test User" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRb-dW-Cjo">
-                                                    <rect key="frame" x="60" y="366" width="482" height="21"/>
+                                                    <rect key="frame" x="60" y="367" width="482" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ixN-Sl-R1d"/>
                                                     </constraints>
@@ -225,6 +225,47 @@
                                             <outlet property="likesLabel" destination="wRb-dW-Cjo" id="lRJ-7Z-x8j"/>
                                             <outlet property="moreButton" destination="W9q-3Y-T8u" id="cuj-eA-OhY"/>
                                             <outlet property="postImageView" destination="Sla-7g-xe8" id="huQ-d0-i7f"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostHeader" rowHeight="40" id="XO2-f2-HdB" customClass="PostSectionHeaderView" customModule="Makestagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XO2-f2-HdB" id="Ksp-p6-zcz">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0O-q7-c9z">
+                                                    <rect key="frame" x="8" y="13" width="36.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Time" translatesAutoresizingMaskIntoConstraints="NO" id="DZ5-Y5-APl">
+                                                    <rect key="frame" x="572" y="8" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="ITi-yX-A3x"/>
+                                                        <constraint firstAttribute="width" constant="20" id="Pc0-uk-B6h"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AI-Uq-gYg">
+                                                    <rect key="frame" x="527.5" y="11" width="36.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DZ5-Y5-APl" secondAttribute="trailing" id="9AI-7d-faD"/>
+                                                <constraint firstItem="z0O-q7-c9z" firstAttribute="leading" secondItem="Ksp-p6-zcz" secondAttribute="leadingMargin" id="UXA-gQ-1eT"/>
+                                                <constraint firstItem="DZ5-Y5-APl" firstAttribute="leading" secondItem="3AI-Uq-gYg" secondAttribute="trailing" constant="8" id="V8m-oC-4O1"/>
+                                                <constraint firstAttribute="centerY" secondItem="3AI-Uq-gYg" secondAttribute="centerY" constant="0.5" id="lT2-ne-R3u"/>
+                                                <constraint firstAttribute="centerY" secondItem="DZ5-Y5-APl" secondAttribute="centerY" constant="2" id="p6U-JU-GRi"/>
+                                                <constraint firstAttribute="centerY" secondItem="z0O-q7-c9z" secondAttribute="centerY" constant="-1.5" id="s8t-s2-FXu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99258790919999995" blue="0.97981537799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="postTimeLabel" destination="3AI-Uq-gYg" id="7MT-82-vwY"/>
+                                            <outlet property="usernameLabel" destination="z0O-q7-c9z" id="sOx-yL-fvM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -283,5 +324,6 @@
         <image name="Home" width="38" height="36"/>
         <image name="More" width="26" height="17"/>
         <image name="People" width="42" height="42"/>
+        <image name="Time" width="22" height="22"/>
     </resources>
 </document>
