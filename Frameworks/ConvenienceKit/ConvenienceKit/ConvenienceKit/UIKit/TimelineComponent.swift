@@ -100,6 +100,7 @@ public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S
     if (content == []) {
       target!.loadInRange(target!.defaultRange) { posts in
         self.content = posts ?? []
+        self.currentRange.endIndex = self.content.count
         self.target!.tableView.reloadData()
       }
     }
@@ -127,6 +128,8 @@ public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S
       self.content = content! as [T]
       self.refreshControl.endRefreshing()
       
+      self.currentRange.endIndex = self.content.count
+      
       UIView.transitionWithView(self.target!.tableView,
         duration: 0.35,
         options: .TransitionCrossDissolve,
@@ -141,7 +144,6 @@ public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S
   
   func loadMore() {
     let additionalRange = Range(start: currentRange.endIndex, end: currentRange.endIndex + target!.additionalRangeSize)
-    currentRange = Range(start: currentRange.startIndex, end: additionalRange.endIndex)
     
     target!.loadInRange(additionalRange) { posts in
       let newPosts = posts
@@ -151,6 +153,7 @@ public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S
       }
       
       self.content = self.content + newPosts!
+      self.currentRange = Range(start: self.currentRange.startIndex, end: self.content.count)
       self.target!.tableView.reloadData()
     }
   }
