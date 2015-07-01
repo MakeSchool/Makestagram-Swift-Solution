@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Makestagram
+//  Template Project
 //
 //  Created by Benjamin Encz on 5/15/15.
 //  Copyright (c) 2015 Make School. All rights reserved.
@@ -20,6 +20,4 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-
 }
-

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Makestagram
+//  Template Project
 //
 //  Created by Benjamin Encz on 5/15/15.
 //  Copyright (c) 2015 Make School. All rights reserved.
@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+    
+    PFFacebookUtils.initialize()
     
     return true
   }

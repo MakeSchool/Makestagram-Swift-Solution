@@ -15,23 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "62C8C1DF1B06BD6500DC3EA7"
-               BuildableName = "Makestagram.app"
-               BlueprintName = "Makestagram"
-               ReferencedContainer = "container:Makestagram.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62C8C1F41B06BD6500DC3EA7"
-               BuildableName = "MakestagramTests.xctest"
-               BlueprintName = "MakestagramTests"
-               ReferencedContainer = "container:Makestagram.xcodeproj">
+               BuildableName = "TemplateProject.app"
+               BlueprintName = "TemplateProject"
+               ReferencedContainer = "container:TemplateProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62C8C1F41B06BD6500DC3EA7"
-               BuildableName = "MakestagramTests.xctest"
-               BlueprintName = "MakestagramTests"
-               ReferencedContainer = "container:Makestagram.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "62C8C1DF1B06BD6500DC3EA7"
-            BuildableName = "Makestagram.app"
-            BlueprintName = "Makestagram"
-            ReferencedContainer = "container:Makestagram.xcodeproj">
+            BuildableName = "TemplateProject.app"
+            BlueprintName = "TemplateProject"
+            ReferencedContainer = "container:TemplateProject.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "62C8C1DF1B06BD6500DC3EA7"
-            BuildableName = "Makestagram.app"
-            BlueprintName = "Makestagram"
-            ReferencedContainer = "container:Makestagram.xcodeproj">
+            BuildableName = "TemplateProject.app"
+            BlueprintName = "TemplateProject"
+            ReferencedContainer = "container:TemplateProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "62C8C1DF1B06BD6500DC3EA7"
-            BuildableName = "Makestagram.app"
-            BlueprintName = "Makestagram"
-            ReferencedContainer = "container:Makestagram.xcodeproj">
+            BuildableName = "TemplateProject.app"
+            BlueprintName = "TemplateProject"
+            ReferencedContainer = "container:TemplateProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

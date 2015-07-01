@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624262C01B4460CB00005CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624262B21B4460CB00005CE3 /* AppDelegate.swift */; };
+		624262C11B4460CB00005CE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 624262B31B4460CB00005CE3 /* LaunchScreen.xib */; };
+		624262C21B4460CB00005CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624262B51B4460CB00005CE3 /* Main.storyboard */; };
+		624262C31B4460CB00005CE3 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624262B81B4460CB00005CE3 /* ErrorHandling.swift */; };
+		624262C41B4460CB00005CE3 /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624262B91B4460CB00005CE3 /* ParseLoginHelper.swift */; };
+		624262C51B4460CB00005CE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624262BA1B4460CB00005CE3 /* Images.xcassets */; };
+		624262C71B4460CB00005CE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624262BD1B4460CB00005CE3 /* ViewController.swift */; };
 		62551B6C1B06BF6D000913E4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B631B06BF6D000913E4 /* Bolts.framework */; };
 		62551B6D1B06BF6D000913E4 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B641B06BF6D000913E4 /* FBSDKCoreKit.framework */; };
 		62551B6E1B06BF6D000913E4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B651B06BF6D000913E4 /* FBSDKLoginKit.framework */; };
@@ -23,18 +30,10 @@
 		62551B9E1B06C354000913E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B9D1B06C354000913E4 /* MobileCoreServices.framework */; };
 		62551BA01B06C35B000913E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B9F1B06C35B000913E4 /* AudioToolbox.framework */; };
 		62551BA21B06C373000913E4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551BA11B06C373000913E4 /* libsqlite3.dylib */; };
-		6277189F1B0A58E800AF5C6E /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277189D1B0A58E800AF5C6E /* ErrorHandling.swift */; };
-		627718A01B0A58E800AF5C6E /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277189E1B0A58E800AF5C6E /* ParseLoginHelper.swift */; };
 		62A07D1E1B1E56C8001F6916 /* ConvenienceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B8E1B06BFD7000913E4 /* ConvenienceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62A07D661B1F79F2001F6916 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A07D651B1F79F2001F6916 /* libstdc++.6.dylib */; };
 		62A07D6E1B1F7FB9001F6916 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B7E1B06BFA2000913E4 /* Bond.framework */; };
 		62A07D6F1B1F7FB9001F6916 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B7E1B06BFA2000913E4 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8C1E51B06BD6500DC3EA7 /* AppDelegate.swift */; };
-		62C8C1E81B06BD6500DC3EA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8C1E71B06BD6500DC3EA7 /* ViewController.swift */; };
-		62C8C1EB1B06BD6500DC3EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C8C1E91B06BD6500DC3EA7 /* Main.storyboard */; };
-		62C8C1ED1B06BD6500DC3EA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C8C1EC1B06BD6500DC3EA7 /* Images.xcassets */; };
-		62C8C1F01B06BD6500DC3EA7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C8C1EE1B06BD6500DC3EA7 /* LaunchScreen.xib */; };
-		62C8C1FC1B06BD6500DC3EA7 /* MakestagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8C1FB1B06BD6500DC3EA7 /* MakestagramTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,13 +107,6 @@
 			remoteGlobalIDString = 69491BAD1A7C217100A13B6B;
 			remoteInfo = Bond;
 		};
-		62C8C1F61B06BD6500DC3EA7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62C8C1D81B06BD6500DC3EA7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 62C8C1DF1B06BD6500DC3EA7;
-			remoteInfo = Makestagram;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -133,6 +125,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		624262B21B4460CB00005CE3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		624262B41B4460CB00005CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		624262B61B4460CB00005CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		624262B81B4460CB00005CE3 /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		624262B91B4460CB00005CE3 /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
+		624262BA1B4460CB00005CE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		624262BB1B4460CB00005CE3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624262BC1B4460CB00005CE3 /* TemplateProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TemplateProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		624262BD1B4460CB00005CE3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		62551B631B06BF6D000913E4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
 		62551B641B06BF6D000913E4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		62551B651B06BF6D000913E4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -151,20 +152,8 @@
 		62551B9D1B06C354000913E4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		62551B9F1B06C35B000913E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		62551BA11B06C373000913E4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		6277189D1B0A58E800AF5C6E /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
-		6277189E1B0A58E800AF5C6E /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
 		62A07D651B1F79F2001F6916 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
-		62A07D671B1F7A0E001F6916 /* Makestagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Makestagram-Bridging-Header.h"; sourceTree = "<group>"; };
-		62C8C1E01B06BD6500DC3EA7 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		62C8C1E41B06BD6500DC3EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62C8C1E51B06BD6500DC3EA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		62C8C1E71B06BD6500DC3EA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		62C8C1EA1B06BD6500DC3EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		62C8C1EC1B06BD6500DC3EA7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		62C8C1EF1B06BD6500DC3EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		62C8C1F51B06BD6500DC3EA7 /* MakestagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakestagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		62C8C1FA1B06BD6500DC3EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62C8C1FB1B06BD6500DC3EA7 /* MakestagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakestagramTests.swift; sourceTree = "<group>"; };
+		62C8C1E01B06BD6500DC3EA7 /* TemplateProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,16 +182,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62C8C1F21B06BD6500DC3EA7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		624262B11B4460CB00005CE3 /* TemplateProject */ = {
+			isa = PBXGroup;
+			children = (
+				624262B21B4460CB00005CE3 /* AppDelegate.swift */,
+				624262BD1B4460CB00005CE3 /* ViewController.swift */,
+				624262B31B4460CB00005CE3 /* LaunchScreen.xib */,
+				624262B51B4460CB00005CE3 /* Main.storyboard */,
+				624262B71B4460CB00005CE3 /* Helpers */,
+				624262BA1B4460CB00005CE3 /* Images.xcassets */,
+				624262BB1B4460CB00005CE3 /* Info.plist */,
+				624262BC1B4460CB00005CE3 /* TemplateProject-Bridging-Header.h */,
+				624262BE1B4460CB00005CE3 /* ViewControllers */,
+			);
+			path = TemplateProject;
+			sourceTree = "<group>";
+		};
+		624262B71B4460CB00005CE3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				624262B81B4460CB00005CE3 /* ErrorHandling.swift */,
+				624262B91B4460CB00005CE3 /* ParseLoginHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		624262BE1B4460CB00005CE3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				624262BF1B4460CB00005CE3 /* FilterViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		624262BF1B4460CB00005CE3 /* FilterViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FilterViewController;
+			sourceTree = "<group>";
+		};
 		62551B621B06BF33000913E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,21 +273,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6277189C1B0A58E800AF5C6E /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				6277189D1B0A58E800AF5C6E /* ErrorHandling.swift */,
-				6277189E1B0A58E800AF5C6E /* ParseLoginHelper.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		62C8C1D71B06BD6500DC3EA7 = {
 			isa = PBXGroup;
 			children = (
+				624262B11B4460CB00005CE3 /* TemplateProject */,
 				62551B621B06BF33000913E4 /* Frameworks */,
-				62C8C1E21B06BD6500DC3EA7 /* Makestagram */,
-				62C8C1F81B06BD6500DC3EA7 /* MakestagramTests */,
 				62C8C1E11B06BD6500DC3EA7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -273,58 +285,17 @@
 		62C8C1E11B06BD6500DC3EA7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				62C8C1E01B06BD6500DC3EA7 /* Makestagram.app */,
-				62C8C1F51B06BD6500DC3EA7 /* MakestagramTests.xctest */,
+				62C8C1E01B06BD6500DC3EA7 /* TemplateProject.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		62C8C1E21B06BD6500DC3EA7 /* Makestagram */ = {
-			isa = PBXGroup;
-			children = (
-				6277189C1B0A58E800AF5C6E /* Helpers */,
-				62C8C1E51B06BD6500DC3EA7 /* AppDelegate.swift */,
-				62C8C1E71B06BD6500DC3EA7 /* ViewController.swift */,
-				62C8C1E91B06BD6500DC3EA7 /* Main.storyboard */,
-				62C8C1EC1B06BD6500DC3EA7 /* Images.xcassets */,
-				62C8C1EE1B06BD6500DC3EA7 /* LaunchScreen.xib */,
-				62C8C1E31B06BD6500DC3EA7 /* Supporting Files */,
-				62A07D671B1F7A0E001F6916 /* Makestagram-Bridging-Header.h */,
-			);
-			path = Makestagram;
-			sourceTree = "<group>";
-		};
-		62C8C1E31B06BD6500DC3EA7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				62C8C1E41B06BD6500DC3EA7 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		62C8C1F81B06BD6500DC3EA7 /* MakestagramTests */ = {
-			isa = PBXGroup;
-			children = (
-				62C8C1FB1B06BD6500DC3EA7 /* MakestagramTests.swift */,
-				62C8C1F91B06BD6500DC3EA7 /* Supporting Files */,
-			);
-			path = MakestagramTests;
-			sourceTree = "<group>";
-		};
-		62C8C1F91B06BD6500DC3EA7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				62C8C1FA1B06BD6500DC3EA7 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		62C8C1DF1B06BD6500DC3EA7 /* Makestagram */ = {
+		62C8C1DF1B06BD6500DC3EA7 /* TemplateProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62C8C1FF1B06BD6500DC3EA7 /* Build configuration list for PBXNativeTarget "Makestagram" */;
+			buildConfigurationList = 62C8C1FF1B06BD6500DC3EA7 /* Build configuration list for PBXNativeTarget "TemplateProject" */;
 			buildPhases = (
 				62C8C1DC1B06BD6500DC3EA7 /* Sources */,
 				62C8C1DD1B06BD6500DC3EA7 /* Frameworks */,
@@ -337,28 +308,10 @@
 				62A07D201B1E56C8001F6916 /* PBXTargetDependency */,
 				62A07D711B1F7FB9001F6916 /* PBXTargetDependency */,
 			);
-			name = Makestagram;
+			name = TemplateProject;
 			productName = Makestagram;
-			productReference = 62C8C1E01B06BD6500DC3EA7 /* Makestagram.app */;
+			productReference = 62C8C1E01B06BD6500DC3EA7 /* TemplateProject.app */;
 			productType = "com.apple.product-type.application";
-		};
-		62C8C1F41B06BD6500DC3EA7 /* MakestagramTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 62C8C2021B06BD6500DC3EA7 /* Build configuration list for PBXNativeTarget "MakestagramTests" */;
-			buildPhases = (
-				62C8C1F11B06BD6500DC3EA7 /* Sources */,
-				62C8C1F21B06BD6500DC3EA7 /* Frameworks */,
-				62C8C1F31B06BD6500DC3EA7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				62C8C1F71B06BD6500DC3EA7 /* PBXTargetDependency */,
-			);
-			name = MakestagramTests;
-			productName = MakestagramTests;
-			productReference = 62C8C1F51B06BD6500DC3EA7 /* MakestagramTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -372,13 +325,9 @@
 					62C8C1DF1B06BD6500DC3EA7 = {
 						CreatedOnToolsVersion = 6.3;
 					};
-					62C8C1F41B06BD6500DC3EA7 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = 62C8C1DF1B06BD6500DC3EA7;
-					};
 				};
 			};
-			buildConfigurationList = 62C8C1DB1B06BD6500DC3EA7 /* Build configuration list for PBXProject "Makestagram" */;
+			buildConfigurationList = 62C8C1DB1B06BD6500DC3EA7 /* Build configuration list for PBXProject "TemplateProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -401,8 +350,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				62C8C1DF1B06BD6500DC3EA7 /* Makestagram */,
-				62C8C1F41B06BD6500DC3EA7 /* MakestagramTests */,
+				62C8C1DF1B06BD6500DC3EA7 /* TemplateProject */,
 			);
 		};
 /* End PBXProject section */
@@ -471,16 +419,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C8C1EB1B06BD6500DC3EA7 /* Main.storyboard in Resources */,
-				62C8C1F01B06BD6500DC3EA7 /* LaunchScreen.xib in Resources */,
-				62C8C1ED1B06BD6500DC3EA7 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62C8C1F31B06BD6500DC3EA7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				624262C51B4460CB00005CE3 /* Images.xcassets in Resources */,
+				624262C11B4460CB00005CE3 /* LaunchScreen.xib in Resources */,
+				624262C21B4460CB00005CE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,18 +432,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C8C1E81B06BD6500DC3EA7 /* ViewController.swift in Sources */,
-				627718A01B0A58E800AF5C6E /* ParseLoginHelper.swift in Sources */,
-				6277189F1B0A58E800AF5C6E /* ErrorHandling.swift in Sources */,
-				62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62C8C1F11B06BD6500DC3EA7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62C8C1FC1B06BD6500DC3EA7 /* MakestagramTests.swift in Sources */,
+				624262C01B4460CB00005CE3 /* AppDelegate.swift in Sources */,
+				624262C41B4460CB00005CE3 /* ParseLoginHelper.swift in Sources */,
+				624262C71B4460CB00005CE3 /* ViewController.swift in Sources */,
+				624262C31B4460CB00005CE3 /* ErrorHandling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,28 +452,23 @@
 			name = Bond;
 			targetProxy = 62A07D701B1F7FB9001F6916 /* PBXContainerItemProxy */;
 		};
-		62C8C1F71B06BD6500DC3EA7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 62C8C1DF1B06BD6500DC3EA7 /* Makestagram */;
-			targetProxy = 62C8C1F61B06BD6500DC3EA7 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		62C8C1E91B06BD6500DC3EA7 /* Main.storyboard */ = {
+		624262B31B4460CB00005CE3 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				62C8C1EA1B06BD6500DC3EA7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		62C8C1EE1B06BD6500DC3EA7 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				62C8C1EF1B06BD6500DC3EA7 /* Base */,
+				624262B41B4460CB00005CE3 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		624262B51B4460CB00005CE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				624262B61B4460CB00005CE3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -639,11 +567,11 @@
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Frameworks",
 				);
-				INFOPLIST_FILE = Makestagram/Info.plist;
+				INFOPLIST_FILE = TemplateProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Makestagram/Makestagram-Bridging-Header.h";
+				PRODUCT_NAME = TemplateProject;
+				SWIFT_OBJC_BRIDGING_HEADER = "TemplateProject/TemplateProject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -658,52 +586,18 @@
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/ConvenienceKit/ConvenienceKit/Frameworks",
 				);
-				INFOPLIST_FILE = Makestagram/Info.plist;
+				INFOPLIST_FILE = TemplateProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Makestagram/Makestagram-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		62C8C2031B06BD6500DC3EA7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MakestagramTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makestagram.app/Makestagram";
-			};
-			name = Debug;
-		};
-		62C8C2041B06BD6500DC3EA7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MakestagramTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makestagram.app/Makestagram";
+				PRODUCT_NAME = TemplateProject;
+				SWIFT_OBJC_BRIDGING_HEADER = "TemplateProject/TemplateProject-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		62C8C1DB1B06BD6500DC3EA7 /* Build configuration list for PBXProject "Makestagram" */ = {
+		62C8C1DB1B06BD6500DC3EA7 /* Build configuration list for PBXProject "TemplateProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62C8C1FD1B06BD6500DC3EA7 /* Debug */,
@@ -712,20 +606,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62C8C1FF1B06BD6500DC3EA7 /* Build configuration list for PBXNativeTarget "Makestagram" */ = {
+		62C8C1FF1B06BD6500DC3EA7 /* Build configuration list for PBXNativeTarget "TemplateProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62C8C2001B06BD6500DC3EA7 /* Debug */,
 				62C8C2011B06BD6500DC3EA7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		62C8C2021B06BD6500DC3EA7 /* Build configuration list for PBXNativeTarget "MakestagramTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				62C8C2031B06BD6500DC3EA7 /* Debug */,
-				62C8C2041B06BD6500DC3EA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
