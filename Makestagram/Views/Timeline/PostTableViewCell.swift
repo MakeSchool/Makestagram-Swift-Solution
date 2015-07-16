@@ -17,6 +17,8 @@ class PostTableViewCell: UITableViewCell {
   @IBOutlet weak var likesLabel: UILabel!
   @IBOutlet weak var likeButton: UIButton!
   @IBOutlet weak var moreButton: UIButton!
+    
+  weak var timeline: TimelineViewController?
   
   var likeBond: Bond<[PFUser]?>!
   
@@ -63,9 +65,10 @@ class PostTableViewCell: UITableViewCell {
   // MARK: Button Callbacks
   
   @IBAction func moreButtonTapped(sender: AnyObject) {
-    
+    timeline?.showActionSheetForPost(post!)
   }
   
+  // Technically this should live in the VC, decide whether or not we should keep it here for simplicity
   @IBAction func likeButtonTapped(sender: AnyObject) {
     post?.toggleLikePost(PFUser.currentUser()!)
   }

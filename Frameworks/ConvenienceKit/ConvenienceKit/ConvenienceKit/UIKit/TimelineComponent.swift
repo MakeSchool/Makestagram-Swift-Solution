@@ -118,9 +118,7 @@ public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S
     }
   }
   
-  // MARK: Internal Interface
-  
-  internal func refresh(sender: AnyObject) {
+  public func refresh(sender: AnyObject) {
     currentRange = target!.defaultRange
     
     target!.loadInRange(target!.defaultRange) { content in
@@ -141,6 +139,8 @@ public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S
         completion: nil);
     }
   }
+  
+  // MARK: Internal Interface
   
   func loadMore() {
     let additionalRange = Range(start: currentRange.endIndex, end: currentRange.endIndex + target!.additionalRangeSize)
