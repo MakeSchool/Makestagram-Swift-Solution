@@ -9,27 +9,13 @@
 import UIKit
 
 class PhotoViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    /* This ViewController is not actually used, it's a dummy that exists to enable
+    taking photos upon tab bar button press */
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        // the following line ensures that the camera icon is rendered white instead of the typical gray of a deactivated tab bar item
+        self.tabBarItem.image = UIImage(named: "Camera")?.imageWithRenderingMode(.AlwaysOriginal)
     }
-    */
-
 }

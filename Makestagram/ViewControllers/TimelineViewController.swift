@@ -124,3 +124,11 @@ extension TimelineViewController: UITableViewDelegate {
   }
   
 }
+
+// MARK: Style
+
+extension TimelineViewController {
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+}

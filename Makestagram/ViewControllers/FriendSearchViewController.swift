@@ -172,3 +172,11 @@ extension FriendSearchViewController: FriendSearchTableViewCellDelegate {
   }
   
 }
+
+// MARK: Style
+
+extension FriendSearchViewController {
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+}

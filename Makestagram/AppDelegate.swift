@@ -70,6 +70,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window?.rootViewController = startViewController;
     self.window?.makeKeyAndVisible()
     
+    // make white the default color for selected tab bar entries
+    UITabBar.appearance().tintColor = UIColor.whiteColor()
+    
     return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 
