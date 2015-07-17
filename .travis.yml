@@ -1,0 +1,4 @@
+language: objective-c
+
+script: 
+- xctool -workspace Makestagram.xcworkspace -scheme Makestagram -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO build test
