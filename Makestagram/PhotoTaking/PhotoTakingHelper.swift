@@ -12,18 +12,31 @@ typealias PhotoTakingHelperCallback = UIImage? -> Void
 
 class PhotoTakingHelper : NSObject {
   
-  /** View controller on which AlertViewController and UIImagePickerController are presented */
+  /** View controller on which View Controllers should be presented */
   weak var viewController: UIViewController!
-  var callback: PhotoTakingHelperCallback
+  var successCallback: PhotoTakingHelperCallback
   var imagePickerController: UIImagePickerController?
   
-  init(viewController: UIViewController, callback: PhotoTakingHelperCallback) {
+  var presentedViewControllerStack: [UIViewController] = []
+  
+  init(viewController: UIViewController, successCallback: PhotoTakingHelperCallback) {
     self.viewController = viewController
-    self.callback = callback
+    self.successCallback = successCallback
     
     super.init()
     
     showPhotoSourceSelection()
+    presentedViewControllerStack.append(viewController)
+  }
+  
+  func pushModalViewController(newViewController: UIViewController) {
+    presentedViewControllerStack.last?.presentViewController(newViewController, animated: true, completion: nil)
+    presentedViewControllerStack.append(newViewController)
+  }
+  
+  func popModalViewController() {
+    presentedViewControllerStack.last?.dismissViewControllerAnimated(true, completion: nil)
+    presentedViewControllerStack.removeLast()
   }
   
   func showPhotoSourceSelection() {
@@ -54,9 +67,8 @@ class PhotoTakingHelper : NSObject {
   func showImagePickerController(sourceType: UIImagePickerControllerSourceType) {
     imagePickerController = UIImagePickerController()
     imagePickerController!.sourceType = sourceType
+    pushModalViewController(imagePickerController!)
     imagePickerController!.delegate = self
-    
-    self.viewController.presentViewController(imagePickerController!, animated: true, completion: nil)
   }
   
 }
@@ -64,13 +76,27 @@ class PhotoTakingHelper : NSObject {
 extension PhotoTakingHelper: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   
   func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
-    viewController.dismissViewControllerAnimated(false, completion: nil)
-
-    callback(image)
+    let filterViewController = FilterViewController(image: image)
+    filterViewController.delegate = self
+    pushModalViewController(filterViewController)
   }
   
   func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+    popModalViewController()
+  }
+  
+}
+
+extension PhotoTakingHelper: FilterViewControllerDelegate {
+  
+  func filterViewController(controller: FilterViewController, selectedImage: UIImage) {
+    successCallback(selectedImage)
+    // pop all view controllers
     viewController.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  func filterViewControllerCancelled(controller: FilterViewController) {
+    popModalViewController()
   }
   
 }

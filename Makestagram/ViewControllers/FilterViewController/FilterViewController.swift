@@ -71,3 +71,11 @@ extension FilterViewController: UICollectionViewDataSource, UICollectionViewDele
   }
 
 }
+
+// MARK: Style
+
+extension FilterViewController {
+  override func preferredStatusBarStyle() -> UIStatusBarStyle {
+    return .LightContent
+  }
+}
