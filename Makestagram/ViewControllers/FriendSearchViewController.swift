@@ -168,6 +168,7 @@ extension FriendSearchViewController: FriendSearchTableViewCellDelegate {
       ParseHelper.removeFollowRelationshipFromUser(PFUser.currentUser()!, toUser: user)
       // update local cache
       removeObject(user, fromArray: &followingUsers)
+      self.followingUsers = followingUsers
     }
   }
   
