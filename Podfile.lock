@@ -1,10 +1,50 @@
 PODS:
-  - DateTools (1.5.0)
+  - Bolts (1.2.0):
+    - Bolts/AppLinks (= 1.2.0)
+    - Bolts/Tasks (= 1.2.0)
+  - Bolts/AppLinks (1.2.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.2.0)
+  - Bond (3.10.0)
+  - DateTools (1.6.1)
+  - FBSDKCoreKit (4.5.1):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 4.5.1)
+    - FBSDKCoreKit/no-arc (= 4.5.1)
+  - FBSDKCoreKit/arc (4.5.1):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (4.5.1):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
+  - FBSDKLoginKit (4.5.1):
+    - FBSDKCoreKit
+  - Parse (1.8.1):
+    - Bolts/Tasks (>= 1.2.0)
+  - ParseFacebookUtilsV4 (1.8.1):
+    - Bolts/Tasks (>= 1.2.0)
+    - FBSDKCoreKit (~> 4.0)
+    - FBSDKLoginKit (~> 4.0)
+    - Parse (~> 1.8.0)
+  - ParseUI (1.1.5):
+    - Bolts/Tasks (~> 1.2)
+    - Parse (~> 1.8)
 
 DEPENDENCIES:
+  - Bond
   - DateTools
+  - FBSDKCoreKit
+  - Parse
+  - ParseFacebookUtilsV4
+  - ParseUI
 
 SPEC CHECKSUMS:
-  DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
+  Bolts: d176cb1e0012175589e389a9db49b85e27787576
+  Bond: c873dba04a09dde9e422242420979aa8e4c9e133
+  DateTools: 9bcc89e4f2f9004d8a7a2bd1b49269cf78968e65
+  FBSDKCoreKit: f335eaf6865e1e1597dee1debfb533045500da47
+  FBSDKLoginKit: 225cc9a388a92916ee3f3bb14422017b6e44b65b
+  Parse: 2155953b1565494095d5fa5c83b3c77f2c677c09
+  ParseFacebookUtilsV4: 2c54f1c9756f4827417984f42b64bc38571d626b
+  ParseUI: 2c53621ed028ee793f5ab92a551b099689265525
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.38.2

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ParseFacebookUtilsV4
 import Parse
 import FBSDKCoreKit
 import ParseUI

@@ -4,3 +4,4 @@
 
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #import <DateTools/DateTools.h>
+#import <Parse/Parse.h>

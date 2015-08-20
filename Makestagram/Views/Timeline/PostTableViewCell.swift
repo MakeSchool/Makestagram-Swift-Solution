@@ -26,7 +26,7 @@ class PostTableViewCell: UITableViewCell {
       if let oldValue = oldValue where oldValue != post {
         likeBond.unbindAll()
         postImageView.designatedBond.unbindAll()
-        if (oldValue.image.bonds.count == 0) {
+        if (oldValue.image.numberOfBoundBonds == 0) {
           oldValue.image.value = nil
         }
       }
